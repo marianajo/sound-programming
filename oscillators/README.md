@@ -7,7 +7,12 @@
 ### Pure Data
 ![](./sine.png)
 
-## Sawtooth Oscillator
+## Sawtooth Wave Oscillator
 
 ### Pure Data
 ![](./sawtooth.png)
+
+## Square Wave Oscillator
+
+### Pure Data
+![](./square.png)
