@@ -1,0 +1,57 @@
+#N canvas 800 64 800 813 10;
+#X obj 30 43 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 9550 1;
+#X obj 30 68 mtof;
+#X obj 31 269 dac~;
+#X floatatom 83 93 5 0 0 0 - - -, f 5;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array triangle 100 float 5 black black;
+#A 0 -0.64089 -0.471438 -0.301986 -0.132534 0.0369173 0.206369 0.375821
+0.545272 0.714724 0.884176 0.946372 0.776921 0.607469 0.438017 0.268565
+0.0991137 -0.070338 -0.23979 -0.409241 -0.578693 -0.748145 -0.917597
+-0.912952 -0.7435 -0.574048 -0.404596 -0.235145 -0.0656929 0.103759
+0.273211 0.442662 0.612114 0.781566 0.951017 0.879531 0.710079 0.540627
+0.371176 0.201724 0.0322721 -0.13718 -0.306631 -0.476083 -0.645535
+-0.814986 -0.984438 -0.84611 -0.676658 -0.507207 -0.337755 -0.168303
+0.00114858 0.1706 0.340052 0.509504 0.678955 0.848407 0.982141 0.812689
+0.643238 0.473786 0.304334 0.134882 -0.0345693 -0.204021 -0.373473
+-0.542924 -0.712376 -0.881828 -0.94872 -0.779269 -0.609817 -0.440365
+-0.270913 -0.101462 0.0679901 0.237442 0.406893 0.576345 0.745797 0.915249
+0.9153 0.745848 0.576396 0.406944 0.237493 0.0680408 -0.101411 -0.270863
+-0.440314 -0.609766 -0.779218 -0.948669 -0.881879 -0.712427 -0.542975
+-0.373524 -0.204072 -0.0346202 0.134832;
+#X coords 0 2 99 -2 200 140 1;
+#X restore 32 303 graph;
+#X obj 99 175 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 99 198 metro 100;
+#X text 187 42 slide to control de MIDI frequency;
+#X text 187 66 convert from MIDI to Hz;
+#X text 220 225 graph the wave with a 100 milisec interval;
+#X text 184 270 output sound to speakers;
+#X obj 30 93 phasor~;
+#X text 26 9 TRIANGLE WAVE;
+#X text 187 90 generate a triangle wave from the input frequency;
+#X obj 99 226 tabwrite~ triangle;
+#X obj 51 118 *~ -1;
+#X obj 51 143 +~ 1;
+#X obj 30 170 min~;
+#X obj 30 195 *~ 4;
+#X obj 30 220 -~ 1;
+#X text 32 467 source: http://drymonitis.me/wp-content/uploads/2016/02/making_VCOs_in_pure_data.pdf
+;
+#X text 118 132 combine the sawtooth wave with its invert version;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 1 0 11 0;
+#X connect 5 0 6 0;
+#X connect 6 0 14 0;
+#X connect 11 0 15 0;
+#X connect 11 0 17 0;
+#X connect 15 0 16 0;
+#X connect 16 0 17 1;
+#X connect 17 0 18 0;
+#X connect 18 0 19 0;
+#X connect 19 0 2 0;
+#X connect 19 0 2 1;
+#X connect 19 0 14 0;

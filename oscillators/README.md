@@ -16,3 +16,8 @@
 
 ### Pure Data
 ![](./square.png)
+
+## Triangle Wave Oscillator
+
+### Pure Data
+![](./triangle.png)
