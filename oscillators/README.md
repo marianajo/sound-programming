@@ -30,3 +30,6 @@
 
 ### Pure Data
 ![](./triangle_pd.png)
+
+### SuperCollider
+![](./triangle_sc.png)
