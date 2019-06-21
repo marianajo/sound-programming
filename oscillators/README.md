@@ -5,19 +5,22 @@
 ## Sine Wave Oscillator
 
 ### Pure Data
-![](./sine.png)
+![](./sine_pd.png)
+
+### SuperCollider
+![](./sine_sc.png)
 
 ## Sawtooth Wave Oscillator
 
 ### Pure Data
-![](./sawtooth.png)
+![](./sawtooth_pd.png)
 
 ## Square Wave Oscillator
 
 ### Pure Data
-![](./square.png)
+![](./square_pd.png)
 
 ## Triangle Wave Oscillator
 
 ### Pure Data
-![](./triangle.png)
+![](./triangle_pd.png)
