@@ -15,6 +15,9 @@
 ### Pure Data
 ![](./sawtooth_pd.png)
 
+### SuperCollider
+![](./sawtooth_sc.png)
+
 ## Square Wave Oscillator
 
 ### Pure Data
