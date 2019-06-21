@@ -23,6 +23,9 @@
 ### Pure Data
 ![](./square_pd.png)
 
+### SuperCollider
+![](./square_sc.png)
+
 ## Triangle Wave Oscillator
 
 ### Pure Data
